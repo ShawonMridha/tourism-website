@@ -1,14 +1,11 @@
 import React from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './Show.css'
+import { Card, Col } from 'react-bootstrap';
 
-
-const Show = (props) => {
-    const{img, name, description, _id}=props.cards;
+const Added = (props) => {
+    const{img, name, description}=props.newAdd;
     return (
         <div>
-          <Col>
+            <Col>
                <Card className="size">
                <Card.Img className="card" variant="top" src={img} />
                <Card.Body>
@@ -16,16 +13,12 @@ const Show = (props) => {
                <Card.Text>
               {description}
               </Card.Text>
-             <Link to={`/details/${_id}`}>
-              <button className="btn btn-primary size">Buy Now</button>
-             </Link>
              </Card.Body>
              </Card>
       
-    </Col>
-    
+        </Col>
         </div>
     );
 };
 
-export default Show;
+export default Added;
