@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import Details from './components/Details/Details';
 import MyOrders from './components/MyOrders/MyOrders';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 
@@ -35,9 +36,9 @@ function App() {
           <Route path="/myorders">
           <MyOrders></MyOrders>
           </Route>
-          <Route path="/details/:id">
+          <PrivateRoute path="/details/:id">
           <Details></Details>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
           <NotFound></NotFound>
           </Route>

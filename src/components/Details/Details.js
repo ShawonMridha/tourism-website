@@ -43,10 +43,10 @@ const Details = () => {
           <img className="w-25 mb-5" src={service.img} alt="" />
             <div className="add-service">
               <form onSubmit={handleSubmit(onSubmit)}>
-              <input  {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} placeholder="name"/>
-              <input  type="email" {...register("email")} defaultValue={user.email} placeholder="email" />
-              <input type="number" {...register("number")} placeholder="number" />
-              <textarea {...register("description")} placeholder="Address" />
+              <input  {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} placeholder="name" required/>
+              <input  type="email" {...register("email")} defaultValue={user.email} placeholder="email" required />
+              <input type="number" {...register("number")} placeholder="number" required />
+              <textarea {...register("description")} placeholder="Address" required/>
               <input type="submit" />
             </form>
           </div>
