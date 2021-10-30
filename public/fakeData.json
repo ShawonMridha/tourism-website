@@ -1,41 +1,49 @@
 [
     {
         "name":"Sazek Valley",
+        "pakage":"7000",
         "description":"Sajek Valley is one of the popular tourist spots in Bangladesh situated among the hills",
         "img":"https://avijatrik.org/wp-content/uploads/2019/06/cover22-870x555.jpg"
     },
     {
         "name":"CoxBazar",
+        "pakage":"5000",
         "description":"Cox’s Bazar is a town on the southeast coast of Bangladesh",
         "img":"https://upload.wikimedia.org/wikipedia/commons/5/59/Cox%27s_Bazar.jpg"
     },
     {
         "name":"Kuakata",
+        "pakage":"3000",
         "description":"Sajek Valley is one of the popular tourist spots in Bangladesh situated among the hills",
         "img":"https://tourrom.com/wp-content/uploads/2019/01/Kuakata-Beach-1024x576.jpg"
     },
     {
         "name":"Jaflong",
+        "pakage":"6000",
         "description":"Bangladesh and the Indian state of Meghalaya, overshadowed by subtropical mountains",
         "img":"https://i.pinimg.com/736x/54/8b/72/548b7247e63c240fe75b93f6497ae2ab.jpg"
     },
     {
         "name":"Bandarban",
+        "pakage":"8000",
         "description":"It is one of the three hill districts of Bangladesh and a part of the Chittagong Hill Tracts",
         "img":"http://unb.com.bd/filemanager/photos/64/Tazing-Dong.jpg"
     },
     {
         "name":"Ratargul",
+        "pakage":"45000",
         "description":"Ratargul Swamp Forest is a freshwater swamp forest located in Gowain River, Fatehpur Union",
         "img":"http://bdsearcher.com/wp-content/uploads/2017/08/Ratargul-Swamp-Forest-Sylhet.jpg"
     },
     {
         "name":"Sundorban",
+        "pakage":"1500",
         "description":"Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges",
         "img":"https://www.daily-bangladesh.com/media/imgAll/2019September/en/Royel-Bengal-Tigers-1909081617.jpg"
     },
     {
         "name":"Bagerhat",
+        "pakage":"1000",
         "description":"The Sixty Dome Mosque, is a mosque in Bagerhat, It is a part of the Mosque City of Bagerhat,",
         "img":"https://thumbs.dreamstime.com/b/sixty-dome-mosque-sha-gombuj-moshjid-shait-gumbad-mosque-bagerhat-bangladesh-sixty-dome-mosque-sha-gombuj-moshjid-shait-187421686.jpg"
     }

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Show = (props) => {
-    const{img, name, description, id}=props.cards;
+    const{img, name, description, _id}=props.cards;
     return (
         <div>
           <Col>
@@ -14,12 +14,10 @@ const Show = (props) => {
                <Card.Text>
               {description}
               </Card.Text>
-             <Link to={`/details/${id}`}>
-              <button className="btn btn-primary size">Details</button>
-       
+             <Link to={`/details/${_id}`}>
+              <button className="btn btn-primary size">Buy Now</button>
              </Link>
              </Card.Body>
-        
              </Card>
       
     </Col>

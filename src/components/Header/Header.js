@@ -14,8 +14,8 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link  as={Link} to="/home">Home</Nav.Link>
-                
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                        <Nav.Link as={Link} to="/myorders">My Orders</Nav.Link>
                         {user?.email && <button onClick={logout}>log out</button>}
                         <Navbar.Text>
                             Signed in as: <a href="/login">{ <span>{user.displayName}</span>}</a>
@@ -28,3 +28,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
