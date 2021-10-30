@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import './OrderShow.css'
 
 const OrderShow = (props) => {
     const{neme,name,email,description,number, }=props.cards;
     return (
-        <div>
+        <div className="mb-5">
              <Col>
                <Card className="size">
                <Card.Img className="card" variant="top" src={neme.img} />
@@ -15,8 +16,8 @@ const OrderShow = (props) => {
                  <h5>Name: {name}</h5>
                  <h5>Email: {email}</h5>
                  <h5>Number: {number}</h5>
+                 <h5>Address: {description}</h5>
               </Card.Text>
-              <h5>Address: {description}</h5>
              </Card.Body>
              <Button onClick={()=>props.handleDelete(props.cards._id)}>Delete</Button>
              </Card>

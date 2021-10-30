@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import OrderShow from '../OrderShow/OrderShow';
 
 const MyOrders = () => {
@@ -20,7 +20,7 @@ const MyOrders = () => {
         .then(data =>{
             console.log(data);
             if(data.deletedCount){
-                alert('you want to delete')
+                window.confirm('you want to delete???')
             const remaining = order.filter(service =>service._id !==id);
             setOrder(remaining);
             }

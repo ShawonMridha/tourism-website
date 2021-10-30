@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-// import useFirebase from '../../hooks/useFirebase';
+import './Header.css'
 
 const Header = () => {
     const {user,logout}= useAuth();
@@ -10,9 +10,9 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand href="#home">Tourism</Navbar.Brand>
+                    <Navbar.Brand href="#home">Tour Agency</Navbar.Brand>
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Collapse className="justify-content-end color">
                         <Nav.Link  as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>
                         <Nav.Link as={Link} to="/myorders">My Orders</Nav.Link>

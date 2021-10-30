@@ -38,8 +38,9 @@ const Details = () => {
     
     return (
         <>
-        
-          <img src={service.img} alt="" />
+          <h3>{service.description}</h3>
+          <h4>Pakage Tk: {service.pakage}</h4>
+          <img className="w-25 mb-5" src={service.img} alt="" />
             <div className="add-service">
               <form onSubmit={handleSubmit(onSubmit)}>
               <input  {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} placeholder="name"/>

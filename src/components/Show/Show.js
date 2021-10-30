@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Show.css'
+
 
 const Show = (props) => {
     const{img, name, description, _id}=props.cards;
