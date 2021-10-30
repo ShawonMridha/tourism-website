@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import './AddService.css'
 
 const AddService = () => {
     const { register, handleSubmit,reset } = useForm();
@@ -17,8 +18,9 @@ const AddService = () => {
         
     }
     return (
-        <div className="add-service">
-           <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="add-service mt-5 mb-5">
+            <h3 className="text-primary">ADD YOUR SERVICE:</h3>
+           <form className="sm" onSubmit={handleSubmit(onSubmit)}>
              <input {...register("name", { required: true, maxLength: 20 })} placeholder="name"/>
              <textarea {...register("description")} placeholder="description" />
              <input type="number" {...register("price")} placeholder="price" />

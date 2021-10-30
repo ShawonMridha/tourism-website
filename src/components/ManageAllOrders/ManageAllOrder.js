@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import useAuth from '../../hooks/useAuth';
-import OrderShow from '../OrderShow/OrderShow';
+import ManageCart from '../ManageCart/ManageCart';
 
-const MyOrders = () => {
-    const{user}=useAuth();
+const ManageAllOrder = () => {
     const[order, setOrder] = useState([])
     useEffect(()=>{
         fetch('http://localhost:5000/tourist')
@@ -12,7 +10,8 @@ const MyOrders = () => {
         .then(data=>setOrder(data))
     },[])
     console.log(order)
-    const single = order.filter(getItem=>getItem.email===user.email);
+
+
     const handleDelete = id =>{
         const url = `http://localhost:5000/tourist/${id}`;
         fetch(url,{
@@ -30,16 +29,15 @@ const MyOrders = () => {
         })
     }
     return (
-        
         <div>
             <Container>
             <Row xs={1} md={3} className="g-4">
               {
-              single.map(card=> <OrderShow cards={card}
+              order.map(card=> <ManageCart cards={card}
                 handleDelete={handleDelete}
               >
 
-              </OrderShow>)
+              </ManageCart>)
               }
            </Row>
             </Container>
@@ -47,16 +45,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
-
-
-// order.map(mamulibepar=> <div key={mamulibepar._id}>
-                    
-//     <Row md={3}>
-//        <Col>
-//        <img src={mamulibepar.neme.img} alt="" />
-//        </Col>
-//     </Row>
-
-
-// </div>)
+export default ManageAllOrder;

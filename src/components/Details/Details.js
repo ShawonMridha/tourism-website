@@ -16,7 +16,7 @@ const Details = () => {
         .then(data=>setService(data));
     },[])
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         // console.log(data);
         const place = data;
@@ -32,6 +32,7 @@ const Details = () => {
         .then(res =>res.json())
         .then(result=>{
           console.log(result);
+          reset()
         })
     }
     

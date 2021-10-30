@@ -1,12 +1,11 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import './OrderShow.css'
 
-const OrderShow = (props) => {
+const ManageCart = (props) => {
     const{neme,name,email,description,number, }=props.cards;
     return (
-        <div className="mb-5 mt-5">
-             <Col>
+        <div className="mb-5 mt-5" >
+            <Col>
                <Card className="size">
                <Card.Img className="card" variant="top" src={neme.img} />
                <Card.Body>
@@ -27,4 +26,4 @@ const OrderShow = (props) => {
     );
 };
 
-export default OrderShow;
+export default ManageCart;
