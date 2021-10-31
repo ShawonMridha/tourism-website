@@ -6,14 +6,14 @@ const ServiceShow = () => {
     const[addservice, setAddservice] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://shocking-phantom-73762.herokuapp.com/service')
         .then(res=>res.json())
         .then(data=>setAddservice(data))
     },[])
     return (
         <div>
             <Container>
-                <h3 className="demo mt-5">Added New Service: </h3>
+                <h3 className="demo mt-5 text-primary">Added New Service: </h3>
             <Row xs={1} md={3} className="g-4">
               {
               addservice.map(addservices=> <Added key={addservice._id} newAdd={addservices}  ></Added>)

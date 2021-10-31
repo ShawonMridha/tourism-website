@@ -3,9 +3,9 @@ import notFound from '../images/page404.jpg'
 
 const NotFound = () => {
     return (
-        <div  className="text-center">
+        <div  className="text-center sm={1}">
             <h3>This page is error</h3>
-            <img src={notFound} alt="" />
+            <img className="img-fluid img-thumbnail" src={notFound} alt="" />
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Details = () => {
     const[service, setService] = useState({})
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://shocking-phantom-73762.herokuapp.com/${id}`)
         .then(res=>res.json())
         .then(data=>setService(data));
     },[])
@@ -22,7 +22,7 @@ const Details = () => {
         const place = data;
         place.neme = service;
         // console.log(place);
-        fetch(`http://localhost:5000/tourist`,{
+        fetch(`https://shocking-phantom-73762.herokuapp.com/tourist`,{
            method:'post',
            headers:{
              'content-type':'application/json'
@@ -31,7 +31,8 @@ const Details = () => {
         })
         .then(res =>res.json())
         .then(result=>{
-          console.log(result);
+          // console.log(result);
+          alert('Submited successfully');
           reset()
         })
     }

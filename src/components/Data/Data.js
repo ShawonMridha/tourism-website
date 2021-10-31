@@ -7,14 +7,14 @@ import Show from '../Show/Show';
 const Data = () => {
     const[cards, setCards] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://shocking-phantom-73762.herokuapp.com/products')
         .then(res=>res.json())
         .then(data=>setCards(data))
     },[])
     return (
         <div>
             <Container>
-                <h3 className="demo">SERVICE DEMO ITEM:</h3>
+                <h3 className="demo mt-5 text-primary">SERVICE ITEMS:</h3>
             <Row xs={1} md={3} className="g-4">
               {
               cards.map(card=> <Show key={card._id} cards={card}></Show>)

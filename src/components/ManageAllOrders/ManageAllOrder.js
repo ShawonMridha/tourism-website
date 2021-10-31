@@ -5,7 +5,7 @@ import ManageCart from '../ManageCart/ManageCart';
 const ManageAllOrder = () => {
     const[order, setOrder] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/tourist')
+        fetch('https://shocking-phantom-73762.herokuapp.com/tourist')
         .then(res=>res.json())
         .then(data=>setOrder(data))
     },[])
@@ -13,7 +13,7 @@ const ManageAllOrder = () => {
 
 
     const handleDelete = id =>{
-        const url = `http://localhost:5000/tourist/${id}`;
+        const url = `https://shocking-phantom-73762.herokuapp.com/tourist/${id}`;
         fetch(url,{
             method:'DELETE'
         })

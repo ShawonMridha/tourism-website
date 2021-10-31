@@ -7,7 +7,7 @@ const AddService = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-         axios.post('http://localhost:5000/service', data)
+         axios.post('https://shocking-phantom-73762.herokuapp.com/service', data)
         .then(res =>{
             // console.log(res)
             if(res.data.insertedId){
