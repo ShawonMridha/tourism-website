@@ -13,7 +13,7 @@ const Header = () => {
                     <Navbar.Brand href="#home">Travel Agency</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end color">
-                        <Nav.Link  as={Link} to="/home">Home</Nav.Link>
+                    <Nav.Link  as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>
                         <Nav.Link as={Link} to="/myorders">My Orders</Nav.Link>
                         <Nav.Link as={Link} to="/manageOrders">Manage All Orders</Nav.Link>

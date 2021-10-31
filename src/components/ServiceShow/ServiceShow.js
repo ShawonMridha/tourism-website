@@ -13,10 +13,10 @@ const ServiceShow = () => {
     return (
         <div>
             <Container>
-                <h3 className="demo">Added New Service: </h3>
+                <h3 className="demo mt-5">Added New Service: </h3>
             <Row xs={1} md={3} className="g-4">
               {
-              addservice.map(addservices=> <Added newAdd={addservices} key={addservice._id} ></Added>)
+              addservice.map(addservices=> <Added key={addservice._id} newAdd={addservices}  ></Added>)
               }
            </Row>
             </Container>

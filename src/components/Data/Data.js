@@ -17,7 +17,7 @@ const Data = () => {
                 <h3 className="demo">SERVICE DEMO ITEM:</h3>
             <Row xs={1} md={3} className="g-4">
               {
-              cards.map(card=> <Show cards={card}></Show>)
+              cards.map(card=> <Show key={card._id} cards={card}></Show>)
               }
            </Row>
             </Container>

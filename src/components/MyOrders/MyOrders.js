@@ -35,7 +35,7 @@ const MyOrders = () => {
             <Container>
             <Row xs={1} md={3} className="g-4">
               {
-              single.map(card=> <OrderShow cards={card}
+              single.map(card=> <OrderShow key={card._id} cards={card}
                 handleDelete={handleDelete}
               >
 

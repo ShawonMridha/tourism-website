@@ -33,7 +33,7 @@ const ManageAllOrder = () => {
             <Container>
             <Row xs={1} md={3} className="g-4">
               {
-              order.map(card=> <ManageCart cards={card}
+              order.map(card=> <ManageCart key={card._id} cards={card}
                 handleDelete={handleDelete}
               >
 

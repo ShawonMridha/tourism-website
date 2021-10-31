@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Added = (props) => {
-    const{img, name, description}=props.newAdd;
+    const{img, name, description, price}=props.newAdd;
     return (
         <div>
             <Col>
@@ -13,6 +13,7 @@ const Added = (props) => {
                <Card.Text>
               {description}
               </Card.Text>
+              <h3>Tour Pakage: {price}</h3>
              </Card.Body>
              </Card>
       

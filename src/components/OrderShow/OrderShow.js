@@ -3,7 +3,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 import './OrderShow.css'
 
 const OrderShow = (props) => {
-    const{neme,name,email,description,number, }=props.cards;
+    const{neme,name,email,description,number }=props.cards;
     return (
         <div className="mb-5 mt-5">
              <Col>
