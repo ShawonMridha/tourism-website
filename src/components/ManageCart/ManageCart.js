@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import './ManageCart.css'
 
 const ManageCart = (props) => {
     const{neme,name,email,description,number, }=props.cards;
     return (
         <div className="mb-5 mt-5" >
             <Col>
-               <Card className="size">
+               <Card className="small">
                <Card.Img className="card" variant="top" src={neme.img} />
                <Card.Body>
               <Card.Title>Place Name: {neme.name} </Card.Title>
